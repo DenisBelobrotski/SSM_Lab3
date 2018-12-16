@@ -315,7 +315,12 @@ int* calcFrequenciesEmperic(double* sequence, int num, int cellNum, double leftB
             curBorder += step;
         }
     }
-
+    printf("\nGistogramma:\n");
+    for (int i = 0; i < cellNum; i++)
+    {
+        printf("%d\n", result[i]);
+    }
+    printf("\n");
     return result;
 }
 
